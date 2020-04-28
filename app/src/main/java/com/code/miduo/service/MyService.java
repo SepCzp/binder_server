@@ -51,7 +51,7 @@ public class MyService extends Service {
         Log.d(TAG, "onUnbind: ");
         return super.onUnbind(intent);
     }
-
+    //通过这个类来提供服务
     IMyAidlInterface.Stub mbinder = new IMyAidlInterface.Stub() {
 
         @Override
